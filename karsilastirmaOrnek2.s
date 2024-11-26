@@ -1,0 +1,12 @@
+	LDAA 	#$10
+	LDAB	#$05
+	STAA	$50
+d1	DECA
+	STAA	$55
+	CMPB	$55
+	BNE		d1
+d2	INCA
+	STAA	$60
+	LDAB	#$10
+	CMPB	$60
+	BNE		d2
