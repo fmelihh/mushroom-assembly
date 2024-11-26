@@ -1,0 +1,14 @@
+	LDAA 	#$10
+	LDAB	#$20
+	STAA	$50
+	CMPA	$50
+	CMPA	$55
+*UYGULAMA
+	LDAA 	#$10
+	LDAB	#$20
+	STAA	$50
+d1	INCA
+	STAA	$55
+	CMPB	$55
+	BNE		D1
+	
