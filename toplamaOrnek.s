@@ -1,0 +1,27 @@
+	LDAA	#$25	hex say? yukle
+	LDAB	#$50	A ile B topla A ya yaz				
+	ABA	
+	CLRA			
+	CLRB
+	LDAB	#$59 	ELDE BITI
+	LDAA	#$18	
+	ABA
+	CLRB
+	CLRA
+	LDAA	#$45	NEGATIF SAYI
+	LDAB	#$57
+	ABA	
+*ELDELI TOPLA
+	CLRA			
+	CLRB
+	LDAA	#$45	
+	LDAB	#$57
+	STAA	$55
+	ADCA	$55	
+*AADRESTEN TOPLAMA
+	CLRA			
+	CLRB	
+	LDAA	#$15
+	LDAB	#$10
+	STAA	$50
+	ADDB	$50
