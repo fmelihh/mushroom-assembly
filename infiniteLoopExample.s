@@ -1,0 +1,9 @@
+	LDAA	#00
+d3	INCA	
+	STAA	$81
+	CMPA	#09
+	BNE		d3
+	INCB
+	STAB	$80
+	LDAA	#00
+	BEQ		d3
